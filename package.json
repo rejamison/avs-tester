@@ -1,0 +1,36 @@
+{
+  "name": "avs-tester",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "description": "Calls AVS with mp3 files.",
+  "author": {
+    "name": "Robert Jamison",
+    "email": "rejamison@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rejamison/avs-tester"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "alexa",
+    "avs"
+  ],
+  "engines" : {
+    "node" : ">=6.1.0"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": ">=2.0.0",
+    "http2": ">=1.0.0",
+    "buffer-split": ">=0.0.0",
+    "node-uuid": "1.4.7",
+    "archiver": ">=0.0.0",
+    "fs-extra": "0.30.0"
+  },
+  "devDependencies": {
+  }
+}

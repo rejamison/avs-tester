@@ -1,0 +1,42 @@
+﻿extends layout
+
+block scripts
+    script(src='https://code.jquery.com/jquery-1.12.0.min.js')
+
+block content
+    #amazon-root
+        script(type='text/javascript').
+            var config = !{JSON.stringify(config)};
+            window.onAmazonLoginReady = function () {
+                amazon.Login.setClientId(config.CLIENT_ID);
+            };
+            (function (d) {
+                var a = d.createElement('script');
+                a.type = 'text/javascript';
+                a.async = true;
+                a.id = 'amazon-login-sdk';
+                a.src = 'https://api-cdn.amazon.com/sdk/login1.js';
+                d.getElementById('amazon-root').appendChild(a);
+            })(document);
+
+        a#LoginWithAmazon(href="#")
+            img(src='https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png')
+
+        script(type='text/javascript').
+            document.getElementById('LoginWithAmazon').onclick = function() {
+                options = {
+                    scope : 'alexa:all',
+                    popup: false,
+                    scope_data: {
+                        "alexa:all": {
+                            productID: "CallMeMaybe",
+                            productInstanceAttributes: {
+                                deviceSerialNumber: "12345"
+                            }
+                        }
+                    },
+                    response_type: "code"
+                };
+                amazon.Login.authorize(options, config.PUBLIC_SERVER_URL + '/lwa/auth');
+                return false;
+            };
