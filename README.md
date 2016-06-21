@@ -2,7 +2,7 @@
 
 A command line utility for sending Alexa requests using MP3 files, for use in automating testing.
 
-# How to use it
+## How to use it
 
 1. Create an AVS device if you don't already have one:  https://developer.amazon.com/
   * More detailed instructions under "Registering Your Device and Creating a Security Profile" at:  https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/docs/java-client-sample
