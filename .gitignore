@@ -14,3 +14,4 @@ temp
 *.pem
 *.mp3
 *.raw
+npm-debug.log
