@@ -8,6 +8,7 @@ cfg.CLIENT_SECRET = "";
 cfg.REFRESH_TOKEN = "";
 cfg.DEBUG = 1;
 cfg.PUBLIC_SERVER_URL = "https://localhost";
+cfg.AVS_PRODUCT_ID = "";
 
 // Export configuration object
 module.exports = cfg;
