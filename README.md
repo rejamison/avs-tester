@@ -9,7 +9,7 @@ A command line utility for sending Alexa requests using MP3 files, for use in au
 2. Clone the project:
 
         git clone git@github.com:rejamison/avs-tester.git
-3. Edit config.js to set the Client ID and Client Secret from your AVS device configuration.
+3. Edit config.js to set the Client ID, Client Secret and Product ID from your AVS device configuration.
 4. Run the LWA webapp component to perform an OAuth exchange to retrieve a Refresh Token you'll use to authenticate as the Alexa user when using the tool:
 
 
