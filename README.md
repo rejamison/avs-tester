@@ -2,6 +2,11 @@
 
 A command line utility for sending Alexa requests using MP3 files, for use in automating testing.
 
+## Pre-requisites
+
+* Tested using Node 6.1.0, though it should work with 0.12.X and above.
+  * NOTE: For Mac users, the default version installed via brew is only 0.10.X.
+
 ## How to use it
 
 1. Create an AVS device if you don't already have one:  https://developer.amazon.com/
