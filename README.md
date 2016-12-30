@@ -32,4 +32,4 @@ A command line utility for sending Alexa requests using MP3 files, for use in au
 5. Create an MP3 or WAV file using your favorite tool.
 6. Run the tool to submit the request to Alexa:
 
-        npm index.js your_file.mp3
+        node index.js your_file.mp3
